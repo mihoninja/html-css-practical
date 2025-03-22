@@ -1,0 +1,183 @@
+/* スマホ・PC共通 */
+* {
+  box-sizing: border-box;
+  color: #000;
+}
+
+body {
+  margin: 0 auto 0 auto;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+    sans-serif;
+  font-size: 18px;
+}
+
+/* ヘッダー */
+
+.header {
+  max-width: 980px;
+  height: 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 16px;
+  margin: 20px auto;
+}
+
+.home {
+  width: 205px;
+  height: 51px;
+  padding: 3px 19px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center; /* 中央寄せ */
+  align-items: center;
+  width: max-content; /* 必要な分だけ広がる */
+  height: 49px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.nav ul li {
+  margin: 0 5px; /* 余白を適度に調整 */
+}
+
+.nav ul li a {
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*  ファーストビュー */
+
+.firsr-view img {
+  max-width: 1440px;
+  max-height: 587.76px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 34px;
+  text-align: center;
+}
+
+/* about */
+#about {
+  display: flex;
+  justify-content: center;
+}
+
+.about-box {
+  padding: ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 820px;
+  height: 402px;
+  display: flex;
+}
+
+.about-img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* works */
+#works {
+  display: flex;
+  justify-content: center;
+}
+
+.works-box {
+  display: flex;
+  justify-content: space-between;
+  height: 320px;
+}
+.works-img {
+  width: 240px;
+}
+
+.works-photo {
+  width: 240px;
+  margin: 0 10px;
+}
+
+.works-photo p {
+  margin: 0 0 0 0;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  align-items: center;
+}
+
+/* スマートフォンバージョン（～最大767px） */
+@media screen and (max-width: 767px) {
+  /* ヘッダー */
+  .header {
+    max-width: 980px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+
+  .home {
+    font-size: 28px;
+  }
+
+  .nav ul {
+    padding: auto;
+  }
+  .nav ul li a {
+    font-size: 18px;
+  }
+
+  /* */
+
+  /* ABOUTを縦並び */
+  .about-box {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  /* worksを縦並び */
+  .works-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .works-photo {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+
+  .works-img {
+    width: 100vw;
+    height: auto;
+  }
+}
