@@ -60,8 +60,6 @@ body {
 /*  ファーストビュー */
 
 .firsr-view img {
-  max-width: 1440px;
-  max-height: 587.76px;
   width: 100%;
   display: block;
   margin: 0 auto;
@@ -125,8 +123,8 @@ h3 {
 
 /* フッター */
 footer {
-  text-align: center;
-  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* スマートフォンバージョン（～最大767px） */
@@ -153,8 +151,6 @@ footer {
   .nav ul li a {
     font-size: 18px;
   }
-
-  /* */
 
   /* ABOUTを縦並び */
   .about-box {
